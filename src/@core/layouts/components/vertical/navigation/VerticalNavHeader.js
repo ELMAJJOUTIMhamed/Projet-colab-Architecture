@@ -9,6 +9,31 @@ import Typography from '@mui/material/Typography'
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
 
+const Img = styled('img')(({ theme }) => ({
+  marginBottom: theme.spacing(10),
+  [theme.breakpoints.down('lg')]: {
+    height: 15, // Set the desired height
+    width: 'auto', // Maintain aspect ratio
+    marginTop: theme.spacing(10)
+  },
+  [theme.breakpoints.down('md')]: {
+    height: 10, // Set the desired height
+    width: 'auto' // Maintain aspect ratio
+  },
+  [theme.breakpoints.up('lg')]: {
+    height: 30, // Adjust the height as needed
+    width: 'auto', // Maintain aspect ratio
+    marginTop: theme.spacing(10)
+  },
+  style: {
+    objectFit: 'cover', // Ensure the image covers the entire container
+    width: '100%', // Force the width to be 100%
+    height: '100%', // Force the height to be 100%
+    display: 'block',
+    margin: 'auto'
+  }
+}))
+
 // ** Styled Components
 const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -47,7 +72,9 @@ const VerticalNavHeader = props => {
       ) : (
         <Link href='/' passHref>
           <StyledLink>
-            <svg
+            {/* <img src='/images/favicon.png' alt='Logo' /> */}
+            <Img height='10' alt='error-illustration' src='/images/favicon.png' />
+            {/* <svg
               width={30}
               height={25}
               version='1.1'
@@ -105,9 +132,9 @@ const VerticalNavHeader = props => {
                   </g>
                 </g>
               </g>
-            </svg>
+            </svg> */}
             <HeaderTitle variant='h6' sx={{ ml: 3 }}>
-              {themeConfig.templateName}
+              Gifty
             </HeaderTitle>
           </StyledLink>
         </Link>

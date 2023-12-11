@@ -149,7 +149,7 @@ const DashboardTable = () => {
               <TableCell>Description</TableCell>
               <TableCell>Prix</TableCell>
               <TableCell>Date de réservation</TableCell>
-              <TableCell>Status</TableCell>
+              <TableCell>Réduction</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

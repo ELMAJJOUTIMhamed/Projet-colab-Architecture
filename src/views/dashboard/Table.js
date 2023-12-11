@@ -116,27 +116,26 @@ const statusObj = {
 const Img = styled('img')(({ theme }) => ({
   marginBottom: theme.spacing(10),
   [theme.breakpoints.down('lg')]: {
-    height: 75, // Set the desired height
-    width: 'auto', // Maintain aspect ratio
+    height: '75px', // Set the desired height
+    width: '75px', // Set the desired width
     marginTop: theme.spacing(10)
   },
   [theme.breakpoints.down('md')]: {
-    height: 50, // Set the desired height
-    width: 'auto' // Maintain aspect ratio
+    height: '50px', // Set the desired height
+    width: '50px' // Set the desired width
   },
   [theme.breakpoints.up('lg')]: {
-    height: 100, // Adjust the height as needed
-    width: 'auto', // Maintain aspect ratio
-    marginTop: theme.spacing(10)
+    height: '100px', // Adjust the height as needed
+    width: '100px', // Adjust the width as needed
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(10)
   },
-  style: {
-    objectFit: 'cover', // Ensure the image covers the entire container
-    width: '100%', // Force the width to be 100%
-    height: '100%', // Force the height to be 100%
-    display: 'block',
-    margin: 'auto'
-  }
-}))
+  objectFit: 'cover', // Ensure the image covers the entire container
+  display: 'block',
+  margin: 'auto',
+  boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)'
+}));
+
 
 const DashboardTable = () => {
   return (

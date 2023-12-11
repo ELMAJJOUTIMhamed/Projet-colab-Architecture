@@ -10,6 +10,7 @@ import TableCell from '@mui/material/TableCell'
 import Typography from '@mui/material/Typography'
 import TableContainer from '@mui/material/TableContainer'
 import { styled } from '@mui/material/styles'
+import Checkbox from '@mui/material/Checkbox'
 
 const rows = [
   {
@@ -137,6 +138,8 @@ const Img = styled('img')(({ theme }) => ({
 }));
 
 
+// ... (previous imports)
+
 const DashboardTable = () => {
   return (
     <Card>
@@ -144,20 +147,35 @@ const DashboardTable = () => {
         <Table sx={{ minWidth: 800 }} aria-label='table in dashboard'>
           <TableHead>
             <TableRow>
+              <TableCell></TableCell> {/* New cell for selection checkbox */}
               <TableCell>Image</TableCell>
               <TableCell>Description</TableCell>
               <TableCell>Prix</TableCell>
               <TableCell>Date de réservation</TableCell>
-              <TableCell>Réduction</TableCell>
+              <TableCell>Status</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row, index) => (
               <TableRow key={index} sx={{ '&:last-of-type td, &:last-of-type th': { border: 0 } }}>
+                <TableCell>
+                  <Checkbox
+                    sx={{
+                      '&:hover': {
+                        animation: 'vibrate 0.3s linear infinite', // Add vibration animation on hover
+                      },
+                      '@keyframes vibrate': {
+                        '25%': { transform: 'translateX(-1px) translateY(1px)' },
+                        '50%': { transform: 'translateX(1px) translateY(-1px)' },
+                        '75%': { transform: 'translateX(1px) translateY(1px)' },
+                        '100%': { transform: 'translateX(-1px) translateY(-1px)' },
+                      },
+                    }}
+                  />
+                </TableCell>
                 <TableCell sx={{ py: theme => `${theme.spacing(0.5)} !important` }}>
                   <Img height='487' alt='error-illustration' src={row.image} />
                 </TableCell>
-
                 <TableCell>{row.description}</TableCell>
                 <TableCell>{row.prix}</TableCell>
                 <TableCell>{row.date_reservation}</TableCell>
@@ -186,3 +204,4 @@ const DashboardTable = () => {
 }
 
 export default DashboardTable
+

@@ -12,6 +12,7 @@ import Magnify from 'mdi-material-ui/Magnify'
 // ** Components
 import ModeToggler from 'src/@core/layouts/components/shared-components/ModeToggler'
 import UserDropdown from 'src/@core/layouts/components/shared-components/UserDropdown'
+import CartIcon from 'src/@core/layouts/components/shared-components/AddCart'
 import NotificationDropdown from 'src/@core/layouts/components/shared-components/NotificationDropdown'
 
 const AppBarContent = props => {
@@ -55,8 +56,10 @@ const AppBarContent = props => {
             href='https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free'
           ></Box>
         )}
+        
         <ModeToggler settings={settings} saveSettings={saveSettings} />
         <NotificationDropdown />
+        <CartIcon />
         <UserDropdown />
       </Box>
     </Box>

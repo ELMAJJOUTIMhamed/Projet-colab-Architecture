@@ -11,79 +11,80 @@ import Typography from '@mui/material/Typography'
 import TableContainer from '@mui/material/TableContainer'
 import { styled } from '@mui/material/styles'
 import Checkbox from '@mui/material/Checkbox'
+import { useState, useEffect } from 'react'
 
-const rows = [
-  {
-    image: '/images/cadeau/roses.png',
-    description: 'Bouquet de roses rouges',
-    prix: '25.99 €',
-    date_reservation: '2023-02-14',
-    reduction: '5%'
-  },
-  {
-    image: '/images/cadeau/collier.png',
-    description: 'Collier en argent avec pendentif cœur',
-    prix: '59.99 €',
-    date_reservation: '2023-03-08',
-    reduction: '20%'
-  },
-  {
-    image: '/images/cadeau/bouffe.webp',
-    description: 'Panier-cadeau gourmand',
-    prix: '39.99 €',
-    date_reservation: '2023-04-20',
-    reduction: '15%'
-  },
-  {
-    image: '/images/cadeau/montre.png',
-    description: 'Montre élégante en cuir',
-    prix: '79.99 €',
-    date_reservation: '2023-05-15'
-    // reduction: '5%'
-  },
-  {
-    image: '/images/cadeau/thé.png',
-    description: 'Ensemble de thé artisanal',
-    prix: '29.99 €',
-    date_reservation: '2023-06-10'
-    // reduction: '5%'
-  },
-  {
-    image: '/images/cadeau/robe.webp',
-    description: 'robe de princesse pour enfant',
-    prix: 'prix: 71,75€',
-    date_reservation: '2023-07-02'
-    // reduction: '10%'
-  },
-  {
-    image: '/images/cadeau/tablette.webp',
-    description: 'Tablette tactile dernière génération',
-    prix: '199.99 €',
-    date_reservation: '2023-08-18'
-    // reduction: '25%'
-  },
-  {
-    image: '/images/cadeau/cuisine.jpg',
-    description: 'Cours de cuisine avec un chef étoilé',
-    prix: '89.99 €',
-    date_reservation: '2023-09-25'
-    // reduction: '5%'
-  },
-  {
-    image: '/images/cadeau/echarpe.jpg',
-    description: 'Écharpe en laine faite à la main',
-    prix: '34.99 €',
-    date_reservation: '2023-10-12'
-    // reduction: '10%'
-  },
-  {
-    image: '/images/cadeau/spa.jpg',
-    description: 'Soin spa et massage relaxant',
-    prix: '69.99 €',
-    date_reservation: '2023-11-30'
-    // reduction: '35%'
-  }
-]
+// const rows = [
+//   {
+//     image: '/images/cadeau/roses.png',
+//     description: 'Bouquet de roses rouges',
+//     prix: '25.99 €',
+//     date_reservation: '2023-02-14',
+//     reduction: '5%'
+//   },
+//   {
+//     image: '/images/cadeau/collier.png',
+//     description: 'Collier en argent avec pendentif cœur',
+//     prix: '59.99 €',
+//     date_reservation: '2023-03-08',
+//     reduction: '20%'
+//   },
+//   {
+//     image: '/images/cadeau/bouffe.webp',
+//     description: 'Panier-cadeau gourmand',
+//     prix: '39.99 €',
+//     date_reservation: '2023-04-20',
+//     reduction: '15%'
+//   },
+//   {
+//     image: '/images/cadeau/montre.png',
+//     description: 'Montre élégante en cuir',
+//     prix: '79.99 €',
+//     date_reservation: '2023-05-15'
+//     // reduction: '5%'
+//   },
+//   {
+//     image: '/images/cadeau/thé.png',
+//     description: 'Ensemble de thé artisanal',
+//     prix: '29.99 €',
+//     date_reservation: '2023-06-10'
+//     // reduction: '5%'
+//   },
+//   {
+//     image: '/images/cadeau/robe.webp',
+//     description: 'robe de princesse pour enfant',
+//     prix: 'prix: 71,75€',
+//     date_reservation: '2023-07-02'
+//     // reduction: '10%'
+//   },
+//   {
+//     image: '/images/cadeau/tablette.webp',
+//     description: 'Tablette tactile dernière génération',
+//     prix: '199.99 €',
+//     date_reservation: '2023-08-18'
+//     // reduction: '25%'
+//   },
+//   {
+//     image: '/images/cadeau/cuisine.jpg',
+//     description: 'Cours de cuisine avec un chef étoilé',
+//     prix: '89.99 €',
+//     date_reservation: '2023-09-25'
+//     // reduction: '5%'
+//   },
+//   {
+//     image: '/images/cadeau/echarpe.jpg',
+//     description: 'Écharpe en laine faite à la main',
+//     prix: '34.99 €',
+//     date_reservation: '2023-10-12'
+//     // reduction: '10%'
+//   },
+//   {
+//     image: '/images/cadeau/spa.jpg',
+//     description: 'Soin spa et massage relaxant',
+//     prix: '69.99 €',
+//     date_reservation: '2023-11-30'
+//     // reduction: '35%'
+//   }
+// ]
 const statusObj = {
   applied: { color: 'info' },
   rejected: { color: 'error' },
@@ -141,6 +142,24 @@ const Img = styled('img')(({ theme }) => ({
 // ... (previous imports)
 
 const DashboardTable = () => {
+
+  const [rows, setRows] = useState([]);
+
+  useEffect(() => {
+    // Fetch data when the component mounts
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:4000/products');
+        const data = await response.json();
+        setRows(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []); 
+
   return (
     <Card>
       <TableContainer>
@@ -174,11 +193,11 @@ const DashboardTable = () => {
                   />
                 </TableCell>
                 <TableCell sx={{ py: theme => `${theme.spacing(0.5)} !important` }}>
-                  <Img height='487' alt='error-illustration' src={row.image} />
+                  <Img height='487' alt='error-illustration' src={row.IMAGE_URL} />
                 </TableCell>
-                <TableCell>{row.description}</TableCell>
-                <TableCell>{row.prix}</TableCell>
-                <TableCell>{row.date_reservation}</TableCell>
+                <TableCell>{row.DESCRIPTION}</TableCell>
+                <TableCell>{row.PRIX}€</TableCell>
+                <TableCell>{row.DATE_LIMITE_DE_RESERVATION}</TableCell>
                 <TableCell>
                   {row.reduction && (
                     <Chip

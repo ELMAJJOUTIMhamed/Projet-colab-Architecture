@@ -1,5 +1,5 @@
 // ** React Imports
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 // ** Next Imports
 import Link from 'next/link'
@@ -38,6 +38,7 @@ import BlankLayout from 'src/@core/layouts/BlankLayout'
 
 // ** Demo Imports
 import FooterIllustrationsV1 from 'src/views/pages/auth/FooterIllustration'
+import { AuthProvider, useAuth } from 'src/@core/context/AuthContext'
 
 // ** Styled Components
 const Card = styled(MuiCard)(({ theme }) => ({
@@ -60,8 +61,11 @@ const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
 const LoginPage = () => {
   // ** State
   const [values, setValues] = useState({
+    email: '',
     password: '',
-    showPassword: false
+    showPassword: false,
+    loading: false, // Add loading state
+    error: null, // Add error state
   })
 
   // ** Hook
@@ -80,6 +84,44 @@ const LoginPage = () => {
     event.preventDefault()
   }
 
+  const { isLoggedIn, login} = useAuth()
+
+  const handleSubmit = async () => {
+    const { email, password } = values;
+    try {
+      const response = await fetch('http://localhost:4000/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username: email, password: password }),
+      });
+
+      if (response.ok) {
+        // Successful login
+        const data = await response.json();
+        console.log(data.message);
+
+        // Trigger the login function to update isLoggedIn
+        login()
+
+        // Redirect or perform any necessary actions
+        router.push('/');
+      } else {
+        // Failed login
+        const errorData = await response.json();
+        console.error(errorData.error);
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+    }
+  };
+  
+  useEffect(() => {
+    console.log('Updated isLoggedIn:', isLoggedIn);
+    console.log("g")
+  }, [isLoggedIn]);
+  
   return (
     <Box className='content-center'>
       <Card sx={{ zIndex: 1 }}>
@@ -163,8 +205,16 @@ const LoginPage = () => {
             </Typography>
             <Typography variant='body2'>Please sign-in to your account and start the adventure</Typography>
           </Box>
-          <form noValidate autoComplete='off' onSubmit={e => e.preventDefault()}>
-            <TextField autoFocus fullWidth id='email' label='Email' sx={{ marginBottom: 4 }} />
+          <form noValidate autoComplete='off' onSubmit={e => { e.preventDefault(); handleSubmit(); }}>
+            <TextField
+              autoFocus
+              fullWidth
+              id='email'
+              label='Email'
+              sx={{ marginBottom: 4 }}
+              value={values.email}
+              onChange={handleChange('email')}
+            />
             <FormControl fullWidth>
               <InputLabel htmlFor='auth-login-password'>Password</InputLabel>
               <OutlinedInput
@@ -200,9 +250,12 @@ const LoginPage = () => {
               size='large'
               variant='contained'
               sx={{ marginBottom: 7 }}
-              onClick={() => router.push('/')}
+
+              // onClick={() => router.push('/')}
+              onClick={handleSubmit}
+              disabled={values.loading} // Disable the button while loading
             >
-              Login
+              {values.loading ? 'Logging in...' : 'Login'}
             </Button>
             <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Typography variant='body2' sx={{ marginRight: 2 }}>

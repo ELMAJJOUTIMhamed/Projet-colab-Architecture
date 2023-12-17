@@ -22,82 +22,48 @@ import Trophy from 'src/views/dashboard/Trophy'
 // import WeeklyOverview from 'src/views/dashboard/WeeklyOverview'
 // import DepositWithdraw from 'src/views/dashboard/DepositWithdraw'
 // import SalesByCountries from 'src/views/dashboard/SalesByCountries'
+import { useAuth } from 'src/@core/context/AuthContext'
+import router from 'next/router'
+import { useEffect } from 'react'
 
+
+export const AuthWrapper = ({ children }) => {
+  const { isLoggedIn, login } = useAuth();
+  
+  useEffect(() => {
+
+    // Redirigez vers la page de connexion si l'utilisateur n'est pas connecté
+    if (!isLoggedIn) {
+      // Utilisez la fonction useRouter de Next.js pour gérer la navigation
+      router.push('/pages/login');
+    }
+  }, [isLoggedIn]);
+
+  if (!isLoggedIn) {
+    // Affichez un message ou une interface de chargement si nécessaire
+    return <p>Vous n'êtes pas connecté. Redirection en cours...</p>;
+  }
+
+  // Si l'utilisateur est connecté, affichez le contenu
+  return <>{children}</>
+}
 
 
 const Dashboard = () => {
+
   return (
-    <ApexChartWrapper>
-      <Grid container spacing={6}>
-        <Grid item xs={12}>
-          <Trophy />
-        </Grid>
-        <Grid item xs={12}>
-          <Table />
-        </Grid>
-        {/* <Grid item xs={12} md={8}>
-          <StatisticsCard />
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
-          <WeeklyOverview />
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
-          <TotalEarning />
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
+    <AuthWrapper>
+        <ApexChartWrapper>
           <Grid container spacing={6}>
-            <Grid item xs={6}>
-              <CardStatisticsVerticalComponent
-                stats='$25.6k'
-                icon={<Poll />}
-                color='success'
-                trendNumber='+42%'
-                title='Total Profit'
-                subtitle='Weekly Profit'
-              />
+            <Grid item xs={12}>
+              <Trophy />
             </Grid>
-            <Grid item xs={6}>
-              <CardStatisticsVerticalComponent
-                stats='$78'
-                title='Refunds'
-                trend='negative'
-                color='secondary'
-                trendNumber='-15%'
-                subtitle='Past Month'
-                icon={<CurrencyUsd />}
-              />
-            </Grid>
-            <Grid item xs={6}>
-              <CardStatisticsVerticalComponent
-                stats='862'
-                trend='negative'
-                trendNumber='-18%'
-                title='New Project'
-                subtitle='Yearly Project'
-                icon={<BriefcaseVariantOutline />}
-              />
-            </Grid>
-            <Grid item xs={6}>
-              <CardStatisticsVerticalComponent
-                stats='15'
-                color='warning'
-                trend='negative'
-                trendNumber='-18%'
-                subtitle='Last Week'
-                title='Sales Queries'
-                icon={<HelpCircleOutline />}
-              />
+            <Grid item xs={12}>
+              <Table />
             </Grid>
           </Grid>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
-          <SalesByCountries />
-        </Grid>
-        <Grid item xs={12} md={12} lg={8}>
-          <DepositWithdraw />
-        </Grid> */}
-      </Grid>
-    </ApexChartWrapper>
+        </ApexChartWrapper>
+    </AuthWrapper>
   )
 }
 

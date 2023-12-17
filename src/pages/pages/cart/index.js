@@ -3,10 +3,11 @@ import { useCart } from 'src/@core/context/CartContext';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button, Box } from '@mui/material';
 import Link from 'next/link';
 
-// ... (imports)
-
 const Cart = () => {
   const { cart, removeItem, clearCart } = useCart();
+
+  // Calculate the total amount
+  const totalAmount = cart.reduce((total, item) => total + item.PRIX * item.quantity, 0);
 
   return (
     <Box>
@@ -29,12 +30,17 @@ const Cart = () => {
                   <TableCell>{item.PRIX}€</TableCell>
                   <TableCell>{item.quantity}</TableCell>
                   <TableCell>
-                    <Button variant="outlined" size="small" onClick={() => removeItem(item.id)}>
+                    <Button variant="outlined" size="small" onClick={() => removeItem(item.ID)}>
                       Retirer
                     </Button>
                   </TableCell>
                 </TableRow>
               ))}
+              {/* New row for displaying the total */}
+              <TableRow>
+                <TableCell colSpan={3} align="right"><strong>Total:</strong></TableCell>
+                <TableCell align="right"><strong>{totalAmount.toFixed(2)}€</strong></TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </TableContainer>
@@ -56,4 +62,3 @@ const Cart = () => {
 };
 
 export default Cart;
-

@@ -28,7 +28,7 @@ import { useEffect } from 'react'
 
 
 export const AuthWrapper = ({ children }) => {
-  const { isLoggedIn, login } = useAuth();
+  const { isLoggedIn} = useAuth();
   
   useEffect(() => {
 

@@ -17,6 +17,9 @@ const SwipeableDrawer = styled(MuiSwipeableDrawer)({
     right: 'unset',
     overflowX: 'hidden',
     transition: 'width .25s ease-in-out, box-shadow .25s ease-in-out'
+  },
+  '& [containerref]': {
+
   }
 })
 

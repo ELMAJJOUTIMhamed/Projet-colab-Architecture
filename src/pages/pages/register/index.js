@@ -61,9 +61,11 @@ const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
 const RegisterPage = () => {
   // ** States
   const [values, setValues] = useState({
+    username: '',
+    Email: '',
     password: '',
     showPassword: false
-  })
+  });
 
   // ** Hook
   const theme = useTheme()
@@ -79,6 +81,36 @@ const RegisterPage = () => {
   const handleMouseDownPassword = event => {
     event.preventDefault()
   }
+
+  const handleRegister = async () => {
+    try {
+      // Make a POST request to the registration endpoint
+      const response = await fetch('http://localhost:4000/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: values.username,
+          password: values.password,
+          email: values.Email,
+        }),
+      });
+
+      // Handle the response
+      if (response.ok) {
+        const result = await response.json();
+        console.log(result);
+
+        // Optionally, you can redirect the user to another page after successful registration
+      } else {
+        const error = await response.json();
+        console.error('Registration failed:', error);
+      }
+    } catch (error) {
+      console.error('Error during registration:', error);
+    }
+  };
 
   return (
     <Box className='content-center'>
@@ -164,8 +196,21 @@ const RegisterPage = () => {
             <Typography variant='body2'>Make your app management easy and fun!</Typography>
           </Box>
           <form noValidate autoComplete='off' onSubmit={e => e.preventDefault()}>
-            <TextField autoFocus fullWidth id='username' label='Username' sx={{ marginBottom: 4 }} />
-            <TextField fullWidth type='email' label='Email' sx={{ marginBottom: 4 }} />
+            <TextField
+              autoFocus
+              fullWidth
+              id='username'
+              label='Username'
+              sx={{ marginBottom: 4 }}
+              onChange={handleChange('username')}
+            />
+            <TextField
+              fullWidth
+              type='email'
+              label='Email'
+              sx={{ marginBottom: 4 }}
+              onChange={handleChange('Email')}
+            />
             <FormControl fullWidth>
               <InputLabel htmlFor='auth-register-password'>Password</InputLabel>
               <OutlinedInput
@@ -199,7 +244,13 @@ const RegisterPage = () => {
                 </Fragment>
               }
             />
-            <Button fullWidth size='large' type='submit' variant='contained' sx={{ marginBottom: 7 }}>
+            <Button
+              fullWidth size='large'
+              type='button'
+              variant='contained'
+              sx={{ marginBottom: 7 }}
+              onClick={handleRegister}
+            >
               Sign up
             </Button>
             <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>

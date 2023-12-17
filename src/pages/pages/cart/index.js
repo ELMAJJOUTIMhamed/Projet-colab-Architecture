@@ -1,43 +1,59 @@
 import React from 'react';
+import { useCart } from 'src/@core/context/CartContext';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button, Box } from '@mui/material';
+import Link from 'next/link';
 
-function Cart() {
-  // Fonctionnalités de gestion du panier (à ajouter)
+// ... (imports)
+
+const Cart = () => {
+  const { cart, removeItem, clearCart } = useCart();
 
   return (
-    <div className="cart-container">
-      <h1>Mon Panier</h1>
-
-      {/* Afficher les produits du panier */}
-      <div className="cart-items">
-        {/* Boucle sur les produits dans le panier */}
-        {/* Affichez chaque élément du panier avec les détails */}
-        {/* Exemple :
-        <div className="cart-item" key={productId}>
-          <img src={productImage} alt={productName} />
-          <div className="item-details">
-            <h3>{productName}</h3>
-            <p>Prix : {productPrice} $</p>
-            <p>Quantité : {quantity}</p>
-            {/* Ajoutez d'autres détails au besoin */}
-            {/* Bouton pour supprimer l'article du panier */}
-            {/* <button onClick={() => removeFromCart(productId)}>Supprimer</button>
-          </div>
-        </div>
-        */}
-      </div>
-
-      {/* Résumé du panier */}
-      <div className="cart-summary">
-        <h2>Résumé</h2>
-        {/* Afficher le total du panier */}
-        {/* Exemple :
-        <p>Total: {cartTotal} $</p>
-        */}
-        {/* Bouton pour passer à la caisse */}
-        {/* <button onClick={() => proceedToCheckout()}>Passer à la caisse</button> */}
-      </div>
-    </div>
+    <Box>
+      <h2>Mon Panier</h2>
+      {cart.length > 0 ? (
+        <TableContainer component={Paper}>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>Description</TableCell>
+                <TableCell>Prix</TableCell>
+                <TableCell>Quantité</TableCell>
+                <TableCell>Action</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {cart.map((item) => (
+                <TableRow key={item.id}>
+                  <TableCell>{item.DESCRIPTION}</TableCell>
+                  <TableCell>{item.PRIX}€</TableCell>
+                  <TableCell>{item.quantity}</TableCell>
+                  <TableCell>
+                    <Button variant="outlined" size="small" onClick={() => removeItem(item.id)}>
+                      Retirer
+                    </Button>
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      ) : (
+        <p>Panier Vide</p>
+      )}
+      <Button variant="contained" size="small" onClick={() => clearCart()}>
+        Vider le Panier
+      </Button>
+      <Link href="/">
+        <a>
+          <Button variant="contained" size="small" sx={{ marginLeft: 2 }}>
+            Gift list
+          </Button>
+        </a>
+      </Link>
+    </Box>
   );
-}
+};
 
 export default Cart;
+

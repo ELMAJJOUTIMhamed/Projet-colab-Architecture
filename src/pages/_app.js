@@ -61,13 +61,13 @@ const App = props => {
         <meta name='viewport' content='initial-scale=1, width=device-width' />
       </Head>
 
-      <SettingsProvider>
+      {/* <SettingsProvider> */}
         <SettingsConsumer>
           {({ settings }) => {
             return <ThemeComponent settings={settings}>{getLayout(<Component {...pageProps} />)}</ThemeComponent>
           }}
         </SettingsConsumer>
-      </SettingsProvider>
+      {/* </SettingsProvider> */}
     </CacheProvider>
   )
 }

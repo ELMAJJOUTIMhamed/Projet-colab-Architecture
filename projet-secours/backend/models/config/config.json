@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Demonone@12345",
+    "database": "gestioncadeaux",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Demonone@12345",
+    "database": "gestioncadeaux",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Demonone@12345",
+    "database": "gestioncadeaux",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

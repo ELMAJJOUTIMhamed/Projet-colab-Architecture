@@ -1,0 +1,116 @@
+<mxfile host="Electron" modified="2023-12-21T14:26:33.909Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="cx-EenMDYqh8elZXJYt0" version="22.1.2" type="device">
+  <diagram name="Page-1" id="09ULYHuq6lumoVjFBD1P">
+    <mxGraphModel dx="1539" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1G6McZiubixRWTYHhvS8-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-1" target="1G6McZiubixRWTYHhvS8-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-1" target="1G6McZiubixRWTYHhvS8-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-1" value="Acceuil" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-4" target="1G6McZiubixRWTYHhvS8-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-4" value="Créer une liste&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-5" target="1G6McZiubixRWTYHhvS8-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-9" value="Validation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-8">
+          <mxGeometry x="0.0444" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-5" value="Formulaire&amp;nbsp;&lt;br&gt;Création de&lt;br&gt;Liste" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="95" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-16" value="Option permettant&amp;nbsp;&lt;br&gt;la modification de&amp;nbsp;&lt;br&gt;la Liste" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-28" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-16">
+          <mxGeometry x="-0.04" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="370" />
+              <mxPoint x="280" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-29" value="A partir de la table des images" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-18">
+          <mxGeometry x="-0.415" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-7" value="Ajout dans une table de Liste" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="265" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-10" target="1G6McZiubixRWTYHhvS8-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-10" value="Option" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="255" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-17" value="Page Correspondant à une&amp;nbsp;&lt;br&gt;Liste de&amp;nbsp;&lt;br&gt;Cadeaux" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="395" width="110" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-19" value="Modification&lt;br&gt;Suppression&amp;nbsp;&lt;br&gt;Ajout Cadeaux" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="265" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-19" target="1G6McZiubixRWTYHhvS8-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="442" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-30" value="Grace à l&#39;option ajouter cadeaux" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-21">
+          <mxGeometry x="-0.1442" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="1G6McZiubixRWTYHhvS8-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="515" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="1G6McZiubixRWTYHhvS8-25" source="1G6McZiubixRWTYHhvS8-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="515" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-32" value="Option de lodification de la Lisrte&lt;br&gt;On peut ajouter un cadeaux&amp;nbsp;&lt;br&gt;On peut modifier les information du cadeaux&amp;nbsp; si&amp;nbsp;&lt;br&gt;on fait partie des personne autoriseé&lt;br&gt;Sinon on peut réserver le cadeaux&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-23">
+          <mxGeometry x="-0.1048" relative="1" as="geometry">
+            <mxPoint x="-14" y="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-25" target="1G6McZiubixRWTYHhvS8-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-25" value="Option" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="475" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-26" value="Modififier information&lt;br&gt;Suppression&amp;nbsp;&lt;br&gt;Ajout Cadeaux&lt;br&gt;Possibilité de reservation" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="485" width="120" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="1G6McZiubixRWTYHhvS8-33" value="Compréhension du projet&lt;br&gt;Nous allons créer un site de gestion de Liste de cadeaux&lt;br&gt;Notre site devra donc permettre la création de la liste de cadeaux en assignant un autheur.&lt;br&gt;Dans la suite l&#39;ajout d&#39;un cadeaux à la liste par l&#39;auteur de la liste&amp;nbsp;&lt;br&gt;Nou pouvons ensuite modifier les informations du cadeaux en permettant à d&#39;autre personne autorisée de pouvoir le faire&lt;br&gt;&lt;br&gt;Enfin nous pouvons réserver le cadeaux avant la date limite de reservation de la Liste." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="350" width="520" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

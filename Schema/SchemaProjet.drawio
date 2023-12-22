@@ -1,49 +1,49 @@
-<mxfile host="Electron" modified="2023-12-21T14:26:33.909Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="cx-EenMDYqh8elZXJYt0" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2023-12-21T23:02:39.211Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="NshaseapLHlpMPiFozM7" version="22.1.2" type="device">
   <diagram name="Page-1" id="09ULYHuq6lumoVjFBD1P">
-    <mxGraphModel dx="1539" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2501" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="1G6McZiubixRWTYHhvS8-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-1" target="1G6McZiubixRWTYHhvS8-4">
+        <mxCell id="1G6McZiubixRWTYHhvS8-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="1G6McZiubixRWTYHhvS8-1" target="1G6McZiubixRWTYHhvS8-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="120" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-1" target="1G6McZiubixRWTYHhvS8-33">
+        <mxCell id="1G6McZiubixRWTYHhvS8-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-1" target="1G6McZiubixRWTYHhvS8-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-1" value="Acceuil" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-1" value="Acceuil" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-4" target="1G6McZiubixRWTYHhvS8-5">
+        <mxCell id="1G6McZiubixRWTYHhvS8-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-4" target="1G6McZiubixRWTYHhvS8-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-4" value="Créer une liste&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-4" value="Créer une liste&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="120" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-5" target="1G6McZiubixRWTYHhvS8-7">
+        <mxCell id="1G6McZiubixRWTYHhvS8-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-5" target="1G6McZiubixRWTYHhvS8-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-9" value="Validation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-8">
+        <mxCell id="1G6McZiubixRWTYHhvS8-9" value="Validation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1G6McZiubixRWTYHhvS8-8" vertex="1" connectable="0">
           <mxGeometry x="0.0444" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-5" value="Formulaire&amp;nbsp;&lt;br&gt;Création de&lt;br&gt;Liste" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-5" value="Formulaire&amp;nbsp;&lt;br&gt;Création de&lt;br&gt;Liste" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="95" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-10">
+        <mxCell id="1G6McZiubixRWTYHhvS8-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-16" value="Option permettant&amp;nbsp;&lt;br&gt;la modification de&amp;nbsp;&lt;br&gt;la Liste" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-10">
+        <mxCell id="1G6McZiubixRWTYHhvS8-16" value="Option permettant&amp;nbsp;&lt;br&gt;la modification de&amp;nbsp;&lt;br&gt;la Liste" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-28" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-16">
+        <mxCell id="1G6McZiubixRWTYHhvS8-28" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1G6McZiubixRWTYHhvS8-16" vertex="1" connectable="0">
           <mxGeometry x="-0.04" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-17">
+        <mxCell id="1G6McZiubixRWTYHhvS8-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-7" target="1G6McZiubixRWTYHhvS8-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="280" y="370" />
@@ -51,64 +51,208 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-29" value="A partir de la table des images" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-18">
+        <mxCell id="1G6McZiubixRWTYHhvS8-29" value="A partir de la table des images" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1G6McZiubixRWTYHhvS8-18" vertex="1" connectable="0">
           <mxGeometry x="-0.415" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-7" value="Ajout dans une table de Liste" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-7" value="Ajout dans une table de Liste" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="265" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-10" target="1G6McZiubixRWTYHhvS8-19">
+        <mxCell id="1G6McZiubixRWTYHhvS8-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-10" target="1G6McZiubixRWTYHhvS8-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-10" value="Option" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-10" value="Option" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="255" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-17" value="Page Correspondant à une&amp;nbsp;&lt;br&gt;Liste de&amp;nbsp;&lt;br&gt;Cadeaux" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-17" value="Page Correspondant à une&amp;nbsp;&lt;br&gt;Liste de&amp;nbsp;&lt;br&gt;Cadeaux" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="210" y="395" width="110" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-19" value="Modification&lt;br&gt;Suppression&amp;nbsp;&lt;br&gt;Ajout Cadeaux" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-19" value="Modification&lt;br&gt;Suppression&amp;nbsp;&lt;br&gt;Ajout Cadeaux" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
           <mxGeometry x="580" y="265" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-19" target="1G6McZiubixRWTYHhvS8-17">
+        <mxCell id="1G6McZiubixRWTYHhvS8-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-19" target="1G6McZiubixRWTYHhvS8-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="640" y="442" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-30" value="Grace à l&#39;option ajouter cadeaux" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-21">
+        <mxCell id="1G6McZiubixRWTYHhvS8-30" value="Grace à l&#39;option ajouter cadeaux" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1G6McZiubixRWTYHhvS8-21" vertex="1" connectable="0">
           <mxGeometry x="-0.1442" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="1G6McZiubixRWTYHhvS8-25">
+        <mxCell id="1G6McZiubixRWTYHhvS8-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="1G6McZiubixRWTYHhvS8-25" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="350" y="515" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="1G6McZiubixRWTYHhvS8-25" source="1G6McZiubixRWTYHhvS8-17">
+        <mxCell id="1G6McZiubixRWTYHhvS8-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="1G6McZiubixRWTYHhvS8-17" target="1G6McZiubixRWTYHhvS8-25" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="350" y="515" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-32" value="Option de lodification de la Lisrte&lt;br&gt;On peut ajouter un cadeaux&amp;nbsp;&lt;br&gt;On peut modifier les information du cadeaux&amp;nbsp; si&amp;nbsp;&lt;br&gt;on fait partie des personne autoriseé&lt;br&gt;Sinon on peut réserver le cadeaux&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1G6McZiubixRWTYHhvS8-23">
+        <mxCell id="1G6McZiubixRWTYHhvS8-32" value="Option de modification de la Lisrte&lt;br&gt;On peut ajouter un cadeaux&amp;nbsp;&lt;br&gt;On peut modifier les information du cadeaux&amp;nbsp; si&amp;nbsp;&lt;br&gt;on fait partie des personne autoriseé&lt;br&gt;Sinon on peut réserver le cadeaux&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1G6McZiubixRWTYHhvS8-23" vertex="1" connectable="0">
           <mxGeometry x="-0.1048" relative="1" as="geometry">
-            <mxPoint x="-14" y="18" as="offset" />
+            <mxPoint x="-15" y="18" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G6McZiubixRWTYHhvS8-25" target="1G6McZiubixRWTYHhvS8-26">
+        <mxCell id="1G6McZiubixRWTYHhvS8-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1G6McZiubixRWTYHhvS8-25" target="1G6McZiubixRWTYHhvS8-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-25" value="Option" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-25" value="Option" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="450" y="475" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-26" value="Modififier information&lt;br&gt;Suppression&amp;nbsp;&lt;br&gt;Ajout Cadeaux&lt;br&gt;Possibilité de reservation" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-26" value="Modififier information&lt;br&gt;Suppression&amp;nbsp;&lt;br&gt;Ajout Cadeaux&lt;br&gt;Possibilité de reservation" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
           <mxGeometry x="590" y="485" width="120" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="1G6McZiubixRWTYHhvS8-33" value="Compréhension du projet&lt;br&gt;Nous allons créer un site de gestion de Liste de cadeaux&lt;br&gt;Notre site devra donc permettre la création de la liste de cadeaux en assignant un autheur.&lt;br&gt;Dans la suite l&#39;ajout d&#39;un cadeaux à la liste par l&#39;auteur de la liste&amp;nbsp;&lt;br&gt;Nou pouvons ensuite modifier les informations du cadeaux en permettant à d&#39;autre personne autorisée de pouvoir le faire&lt;br&gt;&lt;br&gt;Enfin nous pouvons réserver le cadeaux avant la date limite de reservation de la Liste." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="1G6McZiubixRWTYHhvS8-33" value="Compréhension du projet&lt;br&gt;Nous allons créer un site de gestion de Liste de cadeaux&lt;br&gt;Notre site devra donc permettre la création de la liste de cadeaux en assignant un autheur.&lt;br&gt;Dans la suite l&#39;ajout d&#39;un cadeaux à la liste par l&#39;auteur de la liste&amp;nbsp;&lt;br&gt;Nou pouvons ensuite modifier les informations du cadeaux en permettant à d&#39;autre personne autorisée de pouvoir le faire&lt;br&gt;&lt;br&gt;Enfin nous pouvons réserver le cadeaux avant la date limite de reservation de la Liste." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-340" y="350" width="520" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-1" value="Parcours client&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-2" value="Acceuil" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-3" target="9s_baTir_hGf43v-v5ii-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-6" value="API&amp;nbsp; POST&amp;nbsp; pour &lt;br&gt;insérer une liste" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-5">
+          <mxGeometry x="-0.0941" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-3" value="Formulaire pour créer la liste" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="890" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-4" target="9s_baTir_hGf43v-v5ii-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="1010" />
+              <mxPoint x="-45" y="1010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-10" value="Possibilité d&#39;ajouter une nouvelle liste" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-7">
+          <mxGeometry x="0.0167" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-4" target="9s_baTir_hGf43v-v5ii-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-11" value="Possibiilité&amp;nbsp;&lt;br&gt;d&#39;ajouter&amp;nbsp;&lt;br&gt;des&amp;nbsp;&lt;br&gt;cadeaux&amp;nbsp;&lt;br&gt;aux&amp;nbsp;listes&lt;br&gt;créées" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-9">
+          <mxGeometry x="-0.0783" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-4" target="9s_baTir_hGf43v-v5ii-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-14" value="API PUT pour update" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-13">
+          <mxGeometry x="0.32" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-4" target="9s_baTir_hGf43v-v5ii-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="1010" />
+              <mxPoint x="509" y="1010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-17" value="API DELETE&amp;nbsp; pour effacer&amp;nbsp;&lt;br&gt;la liste de la base de données" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-16">
+          <mxGeometry x="0.686" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-4" value="Posibilité d&#39;ajouter de nouvelle liste" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="890" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-8" value="page de cadeaux" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-12" value="Posibilité de modifier les information d&#39;une liste" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1100" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-15" value="Possibilité de supprimer une liste" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="1100" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-18" value="page de cadeaux" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-22" target="9s_baTir_hGf43v-v5ii-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-21" value="API&amp;nbsp; POST&amp;nbsp; pour &lt;br&gt;insérer un cadeaux&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-20">
+          <mxGeometry x="-0.0941" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-22" value="Formulaire pour créer un cadeau" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="1262" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-31" target="9s_baTir_hGf43v-v5ii-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="1382" />
+              <mxPoint x="-35" y="1382" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-24" value="Possibilité d&#39;ajouter une nouveux cadeaux" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-23">
+          <mxGeometry x="0.0167" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-31" target="9s_baTir_hGf43v-v5ii-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="1292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-26" value="Posibilité de&amp;nbsp;&lt;br&gt;réserver &lt;br&gt;un cadeaux&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-25">
+          <mxGeometry x="-0.0783" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-31" target="9s_baTir_hGf43v-v5ii-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-28" value="API PUT pour update&lt;br&gt;les information d&#39;un&amp;nbsp;&lt;br&gt;cadeau" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-27">
+          <mxGeometry x="0.32" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-31" target="9s_baTir_hGf43v-v5ii-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="1382" />
+              <mxPoint x="519" y="1382" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-30" value="API DELETE&amp;nbsp; pour effacer&amp;nbsp;&lt;br&gt;un cadeaux de &lt;br&gt;la base de donnée&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9s_baTir_hGf43v-v5ii-29">
+          <mxGeometry x="0.686" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9s_baTir_hGf43v-v5ii-31" target="9s_baTir_hGf43v-v5ii-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-31" value="Posibilité d&#39;ajouter de nouveaux cadeaux" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1262" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-33" value="Posibilité de modifier les information d&#39;un cadeau" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1472" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-34" value="Possibilité de supprimer un cadeaux" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="424" y="1472" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9s_baTir_hGf43v-v5ii-36" value="Réservation" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1262" width="190" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

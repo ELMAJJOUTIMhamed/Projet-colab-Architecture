@@ -1,0 +1,160 @@
+
+/* src/styles/style.module.css */
+.form-container{
+  border: 1px solid #ccc;
+  padding: 16px;
+  min-width: 800px;
+  max-width: 800px; /* Ajuste la valeur selon tes besoins */
+  margin: 0 auto; /* Pour centrer horizontalement */
+}
+
+.form-container-gift {
+  /* Styles communs à .form-container et .form-container-gift */
+  border: 1px solid #ccc;
+  padding: 16px;
+  min-width: 500px;
+  margin: 0 auto; /* Pour centrer horizontalement */
+
+  /* Ajout de styles spécifiques pour .form-container-gift */
+  max-width: 800px; /* Largeur maximale pour .form-container-gift */
+}
+
+/* Ajout de styles spécifiques pour le placeholder textarea */
+.form-container-gift input::placeholder,
+.form-container-gift textarea::placeholder
+{
+  font-size: smaller;
+}
+
+
+/* Styles spécifiques pour textarea dans .form-container-gift */
+.form-container-gift textarea {
+  width: auto; /* Largeur augmentée de 40px */
+  max-width: none; /* Supprime la limite de largeur maximale */
+  padding: 12px; /*Ajuste la valeur selon tes besoins*/
+  font-size: 16px; /* Ajuste la valeur selon tes besoins */
+  border: none;
+  border-bottom: 3px solid #ccc; /* Bord inférieur initial plus épais */
+  transition: border-bottom 0.3s ease; /* Animation de transition pour le focus */
+  outline: none; /* Supprime la bordure par défaut */
+
+  /* Ajoute des styles spécifiques pour les écrans de grande taille */
+  @media screen and (min-width: 800px) {
+    border-bottom: 3px solid #ccc; /* Bord inférieur initial plus épais */
+    transition: border-bottom 0.3s ease; /* Animation de transition pour le focus */
+    outline: none; /* Supprime la bordure par défaut */
+  }
+
+  /* Moins de 800px */
+  @media screen and (max-width: 799px) {
+    background: none; /* Supprime le fond sur les petits écrans */
+    border-bottom: 2px solid #ccc; /* Rend la bordure inférieure un peu plus épaisse sur les petits écrans */
+    width: 100%; /* Change la largeur à 100% pour passer en colonne */
+  }
+
+  /* Moins de 1000px */
+  /* @media screen and (max-width: px) {
+  } */
+}
+
+/* Ajoute des styles spécifiques pour le focus du textarea dans .form-container-gift */
+.form-container-gift textarea:focus {
+  border-bottom: 3px solid #ff6b6b; /* Changement de bordure inférieure au focus */
+}
+
+
+
+/* Ajoute des styles pour centrer verticalement les éléments et aligner les icônes côte à côte */
+.form-container form,
+.form-container-gift form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles spécifiques pour les écrans de grande taille */
+@media screen and (min-width: 800px) {
+  .form-container form,
+  .form-container-gift form {
+    flex-direction: row; /* Aligner horizontalement les div sur les grands écrans */
+    justify-content: space-around;
+  }
+
+  .form-container label,
+  .form-container-gift label,
+  .form-container input,
+  .form-container-gift input {
+    width: auto; /* Aligner horizontalement les div sur les grands écrans */
+    max-width: 500px; /* Ajuste la valeur selon tes besoins */
+    margin-right: 16px; /* Séparer légèrement les icônes des inputs */
+  }
+
+  .form-container button,
+  .form-container-gift button {
+    margin-top: 8px; /* Légère séparation entre les boutons */
+  }
+
+  /* Agrandir la taille des éléments */
+  .form-container label,
+  .form-container-gift label {
+    font-size: 18px; /* Ajuste la valeur selon tes besoins */
+  }
+
+  .form-container input,
+  .form-container-gift input {
+    /* padding: 12px; Ajuste la valeur selon tes besoins */
+    font-size: 16px; /* Ajuste la valeur selon tes besoins */
+    border: none;
+    border-bottom: 3px solid #ccc; /* Bord inférieur initial plus épais */
+    transition: border-bottom 0.3s ease; /* Animation de transition pour le focus */
+    outline: none; /* Supprime la bordure par défaut */
+  }
+
+  .form-container input:focus,
+  .form-container-gift input:focus {
+    border-bottom: 3px solid #ff6b6b; /* Changement de bordure inférieure au focus */
+  }
+
+  .form-container button,
+  .form-container-gift button {
+    font-size: 16px; /* Ajuste la valeur selon tes besoins */
+  }
+}
+
+/* Moins de 800px */
+@media screen and (max-width: 799px) {
+  .form-container form,
+  .form-container-gift form {
+    flex-direction: column; /* Aligner verticalement les div sur les petits écrans */
+    align-items: center; /* Centrer verticalement les éléments */
+  }
+
+  .form-container input,
+  .form-container label,
+  .form-container-gift input,
+  .form-container-gift label,
+  .form-container button,
+  .form-container-gift button {
+    width: 100%; /* Ajuste la largeur des éléments pour les petits écrans */
+    max-width: none; /* Supprime la limite de largeur maximale */
+    margin-right: 0; /* Supprime la marge entre les éléments */
+  }
+
+  .form-container button,
+  .form-container-gift button {
+    margin-top: 8px; /* Légère séparation entre les boutons */
+  }
+
+  /* Supprime le fond sur les petits écrans */
+  .form-container input,
+  .form-container-gift input {
+    background: none;
+  }
+
+  /* Rend la bordure inférieure un peu plus épaisse sur les petits écrans */
+  .form-container input,
+  .form-container-gift input {
+    border-bottom: 2px solid #ccc;
+  }
+}

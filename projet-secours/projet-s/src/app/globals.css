@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+
+  /* Ajoutez ces classes pour définir la bordure ombrée */
+  border: 8px solid rgba(0, 0, 0, 0.1); /* Ajustez l'opacité selon vos préférences */
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5); /* Ajustez l'opacité et la taille de l'ombre selon vos préférences */
+}
